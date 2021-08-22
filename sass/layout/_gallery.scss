@@ -1,0 +1,67 @@
+.gallery {
+  @include placinggrid(3, 370px);
+
+  &__title {
+    font-weight: var(--font-weight-title);
+    @include type(
+      var(--secondary-font-size),
+      2,
+      var(--secondary-letter-spacing)
+    );
+    margin-bottom: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--title-tex-color);
+  }
+  &__link {
+    display: block;
+    transition: box-shadow var(--animation) var(--cubic);
+  }
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__link:hover &__action,
+  &__link:focus &__action {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__about {
+    font-size: var(--secondary-font-size);
+    line-height: 1.87;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: var(--primary-tex-color);
+  }
+  &__description {
+    border-right: 1px solid #f5f4fa;
+    border-bottom: 1px solid #f5f4fa;
+    border-left: 1px solid #f5f4fa;
+    padding: 20px 24px;
+  }
+  &__trumb {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  &__action {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: rgba(32, 148, 243, 0.9);
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform var(--animation) var(--cubic);
+  }
+}

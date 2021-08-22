@@ -1,0 +1,37 @@
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    font-weight: var(--font-weight-title);
+    font-size: 32px;
+    line-height: 1.16;
+  }
+
+  &__list {
+    margin: 0;
+    @include placinggrid(3, 370px);
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__action {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 370px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--white-text-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    @include centeredflex();
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

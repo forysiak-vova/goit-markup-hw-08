@@ -1,0 +1,42 @@
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: var(--font-weight-title);
+    font-size: 32px;
+    line-height: 1.16;
+  }
+
+  &__list {
+    margin: 0;
+    @include placinggrid(4, 270px);
+  }
+
+  &__item {
+    box-shadow: 0px 4px 4px rgba(207, 137, 137, 0.25);
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: var(--secondary-font-size);
+    line-height: 1.19;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    font-size: var(--secondary-font-size);
+    line-height: 1.19;
+    margin-bottom: 16px;
+  }
+
+  &__worker {
+    padding: 30px 30px;
+    text-align: center;
+    background-color: white;
+  }
+}

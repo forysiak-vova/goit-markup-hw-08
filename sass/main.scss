@@ -1,0 +1,27 @@
+// utils
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mexin";
+
+//base
+@import "./base/container";
+@import "./base/general-styles";
+
+// components
+@import "./components/button";
+@import "./components/link";
+@import "./components/modal-close-btn";
+@import "./components/modal-form";
+@import "./components/modal";
+@import "./components/social-list";
+@import "./components/title";
+
+// layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/work";
+@import "./layout/our-team";
+@import "./layout/logo-company";
+@import "./layout/gallery";
+@import "./layout/footer";

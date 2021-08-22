@@ -1,0 +1,20 @@
+.modal__button {
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  @include centeredflex();
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+.modal__icon {
+  fill: #000000;
+  transition: fill var(--animation) var(--cubic);
+}
+.modal__button:hover .modal__icon,
+.modal__button:focus .modal__icon {
+  fill: var(--accent-color);
+}

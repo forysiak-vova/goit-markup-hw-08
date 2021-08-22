@@ -1,0 +1,47 @@
+.logo-company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__item {
+    display: flex;
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  &__icon {
+    transition: fill var(--animation) var(--cubic);
+  }
+
+  &__link {
+    @include centeredflex();
+    width: 106px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+    transition: border var(--animation) var(--cubic);
+  }
+
+  &__title {
+    text-align: center;
+    font-style: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 3%;
+    color: var(--title-tex-color);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @include placinggrid(6, 170px);
+  }
+}

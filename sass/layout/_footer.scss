@@ -1,0 +1,90 @@
+.address__footer {
+  font-style: normal;
+  margin-top: 20px;
+}
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address__about {
+  color: var(--white-text-color);
+  margin-bottom: 9px;
+}
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__logo {
+  color: var(--white-text-color);
+}
+.footer__list {
+  margin-bottom: 0;
+}
+.footer-contact__item {
+  margin-bottom: 8px;
+}
+.footer-contact__item:last-child {
+  margin-bottom: 0px;
+}
+
+/* =======логотипи соцмереж футер ======= */
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__box {
+  margin-right: 60px;
+}
+
+.join {
+  margin-right: 90px;
+}
+
+.join__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation) var(--cubic);
+}
+.footer-social__icon {
+  fill: var(--white-text-color);
+}
+
+/* =======Підписка футер======= */
+.footer__email {
+  width: 358px;
+  height: 50px;
+  background-color: var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 15px;
+  color: var(--white-text-color);
+  margin-right: 10px;
+}
+
+.subscription__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+.subscription__form {
+  display: flex;
+}

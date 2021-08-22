@@ -1,0 +1,95 @@
+// кнопка героя
+.hero__button {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: var(--font-weight-title);
+  @include type(
+    var(--secondary-font-size),
+    1.87,
+    var(--secondary-letter-spacing)
+  );
+  cursor: pointer;
+  transition: background-color var(--animation) var(--cubic);
+}
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #188ce8;
+}
+
+// кнопки портфоліо
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__button {
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    text-align: center;
+
+    background-color: #f5f4fa;
+    color: var(--title-tex-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--secondary-font-size);
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    transition: color var(--animation) var(--cubic),
+      background-color var(--animation) var(--cubic),
+      box-shadow var(--animation) var(--cubic);
+  }
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// кнопка футер
+.footer__button {
+  padding: 10px 28px;
+  font-weight: bold;
+  @include type(
+    var(--secondary-font-size),
+    1.87,
+    var(--secondary-letter-spacing)
+  );
+  color: var(--white-text-color);
+  background-color: #2196f3;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--animation) var(--cubic);
+}
+.footer__button:hover,
+.footer__button:focus {
+  background-color: #188ce8;
+}

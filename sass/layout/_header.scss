@@ -1,0 +1,91 @@
+// логотип
+.nav__logo_span {
+  font-family: Raleway, sans-serif;
+  font-weight: var(--font-weight-title);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.nav__logo {
+  font-family: Raleway, sans-serif;
+  font-weight: var(--font-weight-title);
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+}
+
+// основні компоненти хедера
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navi {
+  display: flex;
+  align-items: center;
+}
+.page__header {
+  border-bottom: 1px solid #f5f4fa;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+// навігація по сайту
+
+.nav {
+  display: flex;
+  margin-left: 93px;
+
+  &__link-activ {
+    color: var(--accent-color);
+  }
+
+  &__link-activ::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    bottom: -32px;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+// контакт хедер
+
+.contact {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  &__item:first-child {
+    margin-right: 50px;
+  }
+
+  &__icon {
+    align-items: center;
+    margin-right: 10px;
+    fill: var(--primary-tex-color);
+    transition: fill, var(--animation) var(--cubic);
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+  }
+  &__link {
+    color: var(--primary-tex-color);
+    display: flex;
+  }
+}

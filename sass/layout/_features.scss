@@ -1,0 +1,31 @@
+.features {
+  padding-top: 94px;
+
+  &__title {
+    font-weight: var(--font-weight-title);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0;
+    @include placinggrid(4, 270px);
+  }
+
+  &__about {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  &__box {
+    width: 270px;
+    height: 120px;
+    /* border: 1px solid #afb1b8; */
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    /* padding-top: 25px; */
+    border-radius: 4px;
+    @include centeredflex();
+  }
+}

@@ -1,0 +1,15 @@
+@mixin placinggrid($nb, $wd) {
+  display: grid;
+  grid-template-columns: repeat($nb, $wd);
+  gap: 30px;
+}
+@mixin centeredflex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin type($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

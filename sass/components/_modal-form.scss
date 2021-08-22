@@ -1,0 +1,104 @@
+.form {
+  width: 100%;
+  height: 100%;
+
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__lable {
+    margin-bottom: 5px;
+  }
+  &__field:last-child {
+    margin-bottom: 0px;
+  }
+  &__record {
+    margin-bottom: 20px;
+  }
+
+  &__lable_textarea {
+    margin-bottom: 4px;
+  }
+  &__input_textarea {
+    height: 120px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border-radius: 3px;
+    transition: border-color var(--animation) var(--cubic);
+  }
+  &__input_textarea:focus {
+    border-color: var(--accent-color);
+  }
+  &__input {
+    height: 40px;
+    width: 100%;
+    padding: 10px 40px;
+    margin: 0;
+    border: 1px solid #9e8787;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color var(--animation) var(--cubic);
+  }
+
+  &__comment {
+    margin-bottom: 30px;
+    @include centeredflex();
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  &__span:focus-within .modal_svg__icon {
+    fill: var(--accent-color);
+  }
+  &__span:focus-within .form__input {
+    border-color: var(--accent-color);
+  }
+  &__consent {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.modal_svg__icon {
+  position: absolute;
+  top: 48px;
+  left: 13px;
+  transform: translateY(-50%);
+  transition: fill var(--animation) var(--cubic);
+}
+
+.checkbox__input {
+  appearance: none;
+}
+.checkbox__span {
+  border: 2px solid #000;
+  border-radius: 4px;
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+}
+.checkbox__link {
+  text-decoration: underline;
+  color: var(--accent-color);
+  margin-left: 5px;
+}
+
+.checkbox__input:checked + .checkbox__span {
+  background-image: url(../img/icon.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+}
+
+.checkbox__input:focus + .checkbox__span {
+  border-color: var(--accent-color);
+}

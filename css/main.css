@@ -492,6 +492,37 @@ body {
   display: flex;
 }
 
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .icon__closesvg {
+  display: none;
+}
+
+.menu__button.is-open .icon__closesvg {
+  display: block;
+}
+
+.menu__button.is-open .icon__menu {
+  display: none;
+}
+
+.menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+}
+
 .hero {
   background-color: var(--background-color);
   padding-top: 200px;

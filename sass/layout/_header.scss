@@ -44,7 +44,6 @@
 }
 
 // навігація по сайту
-
 .nav {
   display: flex;
   margin-left: 93px;
@@ -71,9 +70,7 @@
     margin-right: 0;
   }
 }
-
 // контакт хедер
-
 .contact {
   margin-top: 0;
   margin-bottom: 0;
@@ -100,4 +97,31 @@
     color: var(--primary-tex-color);
     display: flex;
   }
+}
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu__button .icon__closesvg {
+  display: none;
+}
+.menu__button.is-open .icon__closesvg {
+  display: block;
+}
+.menu__button.is-open .icon__menu {
+  display: none;
+}
+
+.menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
 }

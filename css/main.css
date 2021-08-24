@@ -438,6 +438,7 @@ body {
 }
 
 .page__header {
+  position: relative;
   border-bottom: 1px solid #f5f4fa;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -499,28 +500,36 @@ body {
   border: none;
   background-color: transparent;
 }
-
 .menu__button .icon__closesvg {
   display: none;
 }
-
 .menu__button.is-open .icon__closesvg {
   display: block;
 }
-
 .menu__button.is-open .icon__menu {
   display: none;
 }
+.menu__button:hover .icon__menu {
+  fill: var(--accent-color);
+}
+.menu__button:hover .icon__closesvg {
+  fill: var(--accent-color);
+}
 
 .menu__container {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: red;
+  height: 400px;
+  background-color: palegoldenrod;
   padding: 20px;
   align-items: center;
   font-size: 20px;
+}
+.menu__container.is-open {
+  display: block;
 }
 
 .hero {

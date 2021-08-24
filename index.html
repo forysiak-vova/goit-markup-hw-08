@@ -43,14 +43,20 @@
          </a>
       </li>
       </ul>
-      <button type="button" class="menu__button is-open" data-menu-button>
+      <button 
+      type="button" 
+      class="menu__button" 
+      aria-expanded="false" 
+      aria-controls="menu__container"
+      data-menu-button
+      >
          <svg width="24" height="24" aria-label="переключатель мобилного меню">
             <use class="icon__closesvg" href="./img/symbol-defs.svg#closesvg"></use>
             <use class="icon__menu" href="./img/symbol-defs.svg#menu"></use>
          </svg>
       </button>
-      <div class="menu__container">
-      контент меню
+      <div class="menu__container" id="menu__container" data-menu>
+      Контент меню
       </div>
    </div>
 

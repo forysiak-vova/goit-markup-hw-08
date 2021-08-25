@@ -61,7 +61,7 @@
     height: 4px;
     border-radius: 10px;
     background-color: var(--accent-color);
-    bottom: -37px;
+    bottom: -32px;
   }
 
   &__item {
@@ -69,6 +69,9 @@
   }
   &__item:last-child {
     margin-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 // контакт хедер
@@ -98,18 +101,20 @@
     color: var(--primary-tex-color);
     display: flex;
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 // Розмітка меню хедер
 .menu__button {
+  position: absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-
-  @media screen and (man-widht: 768px) {
-    display: none;
-  }
+  display: none;
 
   & .icon__closesvg {
     display: none;
@@ -123,6 +128,12 @@
 
   &:hover .icon__menu {
     fill: var(--accent-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    // margin-left: 276px;
+    right: 20px;
   }
 }
 

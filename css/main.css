@@ -512,9 +512,6 @@ body {
 .menu__button:hover .icon__menu {
   fill: var(--accent-color);
 }
-.menu__button:hover .icon__closesvg {
-  fill: var(--accent-color);
-}
 
 .menu__container {
   display: none;
@@ -530,6 +527,21 @@ body {
 }
 .menu__container.is-open {
   display: block;
+}
+
+.menu__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu__button-close:hover .icon__closesvg {
+  fill: var(--accent-color);
 }
 
 .hero {

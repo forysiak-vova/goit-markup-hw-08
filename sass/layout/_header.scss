@@ -99,6 +99,7 @@
     display: flex;
   }
 }
+// Розмітка меню хедер
 .menu__button {
   display: inline-flex;
   margin: 0;
@@ -119,9 +120,6 @@
   &:hover .icon__menu {
     fill: var(--accent-color);
   }
-  &:hover .icon__closesvg {
-    fill: var(--accent-color);
-  }
 }
 
 .menu__container {
@@ -139,5 +137,20 @@
 
   &.is-open {
     display: block;
+  }
+}
+.menu__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover .icon__closesvg {
+    fill: var(--accent-color);
   }
 }

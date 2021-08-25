@@ -43,6 +43,41 @@
          </a>
       </li>
       </ul>
+
+       <!-- ======= Розмітка модального вікна хедер ======= -->
+
+
+       <button type="button" class="menu__button" aria-expanded="false" aria-controls="menu__container" data-menu-button>
+         <svg class="icon__menu" width="40" height="40">
+            <use  href="./img/symbol-defs.svg#menu"></use>
+         </svg>
+      </button>
+
+       <div class="menu__container" id="menu__container" data-menu>
+
+         <div class="menu__container-modal">
+                  <button type="button" class="menu__button-close" data-menu-close>
+                     <svg class="icon__closesvg" width="40" height="40">
+                        <use  href="./img/symbol-defs.svg#closesvg"></use>
+                     </svg>
+                  </button>
+            <ul class="mobile-menu__nav list">
+               <li class="mobile-menu__item"><a href="./index.html" class=" link type">Студия</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile__link-activ link type">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="/" class="link type">Контакты</a></li>
+            </ul>
+              <ul class="mobile-menu__contact list">
+                 <ll class="mobile-menu__connection"> <a href="tel:+380961111111" class="contact__link link contact-tel">+38 096 111 11 11</a> </ll>
+                 <ll class="mobile-menu__connection"><a href="mailto:info@devstudio.com" class="contact__link link contact-mail">info@devstudio.com</a></ll>
+              </ul>
+              <ul class="mobile-menu__social list">
+                 <li class="mobile-menu__icon"> <a href="/" class="mobile-menu__link">Instagram</a></li>
+                 <li class="mobile-menu__icon"><a href="/" class="mobile-menu__link">Twitter</a></li>
+                 <li class="mobile-menu__icon"> <a href="/" class="mobile-menu__link">Facebook</a></li>
+                 <li class="mobile-menu__icon"> <a href="/" class="mobile-menu__link">LinkedIn</a> </li>
+              </ul>
+               </div>
+      </div>
       </div>
  </header>
 

@@ -61,7 +61,7 @@
     height: 4px;
     border-radius: 10px;
     background-color: var(--accent-color);
-    bottom: -32px;
+    bottom: -37px;
   }
 
   &__item {
@@ -106,6 +106,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (man-widht: 768px) {
+    display: none;
+  }
 
   & .icon__closesvg {
     display: none;
@@ -159,7 +163,8 @@
   border: none;
   background-color: transparent;
 
-  &:hover .icon__closesvg {
+  &:hover .icon__closesvg,
+  &:focus .icon__closesvg {
     fill: var(--accent-color);
   }
 }
@@ -172,13 +177,14 @@
   margin-bottom: 302px;
 }
 .mobile-menu__item {
-  font-family: Roboto;
-  font-style: normal;
+  margin-bottom: 32px;
   font-weight: 500;
-  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .type {
   font-size: 40px;
@@ -223,8 +229,6 @@
 .mobile-menu__link {
   text-decoration: none;
   color: var(--accent-color);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

@@ -10,7 +10,7 @@
 
   &__list {
     margin: 0;
-    @include placinggrid(4, 270px);
+    @include placinggrid(1, 270px);
   }
 
   &__about {

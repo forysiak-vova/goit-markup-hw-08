@@ -13,17 +13,31 @@
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 // основні компоненти хедера
 
 .navigation {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+  }
 }
 .navi {
   display: flex;
   align-items: center;
+
+  @media screen and(max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 .page__header {
   // position: relative;
@@ -47,7 +61,7 @@
 // навігація по сайту
 .nav {
   display: flex;
-  margin-left: 93px;
+  // margin-left: 93px;
 
   &__link-activ {
     color: var(--accent-color);
@@ -70,21 +84,37 @@
   &__item:last-child {
     margin-right: 0;
   }
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 }
 // контакт хедер
 .contact {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  align-self: center;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  // margin-left: auto;
+  // display: flex;
+  // align-items: center;
+  // align-self: center;
+  display: none;
+  @media screen and(min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
 
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
   &__item:first-child {
-    margin-right: 50px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__item:first-child {
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   &__icon {
@@ -102,13 +132,29 @@
     display: flex;
   }
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+  // @media screen and (min-width: 767px) {
+  //   display: block;
+  //   margin-left: 84px;
+  //   .contact__item:first-child {
+  //     margin-bottom: 10px;
+  //     margin-right: 0;
+  //   }
+  // }
+  // @media screen and (min-width: 1199px) {
+  //   display: flex;
+  //   margin-left: auto;
+  //   .contact__item:first-child {
+  //     margin-bottom: 0;
+  //     margin-right: 30px;
+  //   }
+  // }
 }
 // Розмітка меню хедер
 .menu__button {
-  position: absolute;
+  // position: absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -133,7 +179,7 @@
   @media screen and (max-width: 767px) {
     display: block;
     // margin-left: 276px;
-    right: 20px;
+    // right: 20px;
   }
 }
 

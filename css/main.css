@@ -49,10 +49,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -426,15 +442,34 @@ body {
   color: #000000;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__logo {
+    margin-right: 93px;
+  }
+}
 
 .navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
 }
 
 .navi {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .navi {
+    justify-content: space-between;
+  }
 }
 
 .page__header {
@@ -445,7 +480,6 @@ body {
 
 .nav {
   display: flex;
-  margin-left: 93px;
 }
 .nav__link-activ {
   color: var(--accent-color);
@@ -466,22 +500,31 @@ body {
 .nav__item:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 767px) {
-  .nav {
-    display: none;
-  }
-}
 
 .contact {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  align-self: center;
+  display: none;
 }
-.contact__item:first-child {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item:first-child {
+    margin-right: 30px;
+  }
 }
 .contact__icon {
   align-items: center;
@@ -496,14 +539,8 @@ body {
   color: var(--primary-tex-color);
   display: flex;
 }
-@media screen and (max-width: 767px) {
-  .contact {
-    display: none;
-  }
-}
 
 .menu__button {
-  position: absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -526,7 +563,6 @@ body {
 @media screen and (max-width: 767px) {
   .menu__button {
     display: block;
-    right: 20px;
   }
 }
 

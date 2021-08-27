@@ -847,13 +847,20 @@ body {
 .our-team__list {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(1, 270px);
+  grid-template-columns: repeat(1, 100%);
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .our-team__list {
     display: grid;
-    grid-template-columns: repeat(2, 270px);
+    grid-template-columns: repeat(2, 354px);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
     gap: 30px;
   }
 }

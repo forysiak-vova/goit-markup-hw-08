@@ -14,9 +14,12 @@
 
   &__list {
     margin: 0;
-    @include placinggrid(1, 270px);
+    @include placinggrid(1, 100%);
     @media screen and (min-width: 768px) {
-      @include placinggrid(2, 270px);
+      @include placinggrid(2, 354px);
+    }
+    @media screen and (min-width: 1200px) {
+      @include placinggrid(4, 270px);
     }
   }
 

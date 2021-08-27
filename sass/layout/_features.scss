@@ -6,11 +6,27 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__list {
     margin: 0;
-    @include placinggrid(1, 270px);
+    @include placinggrid(1, 100%);
+
+    @media screen and (min-width: 768px) {
+      @include placinggrid(2, 354px);
+    }
+    @media screen and (min-width: 1200px) {
+      @include placinggrid(4, 270px);
+    }
   }
 
   &__about {
@@ -19,7 +35,7 @@
   }
 
   &__box {
-    width: 270px;
+    width: 100%;
     height: 120px;
     /* border: 1px solid #afb1b8; */
     margin-bottom: 30px;

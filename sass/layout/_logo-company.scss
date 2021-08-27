@@ -33,10 +33,12 @@
 
   &__title {
     text-align: center;
-    font-style: bold;
-    font-size: 36px;
+    // font-style: bold;
+    font-weight: bold;
+    font-size: 28px;
+    // font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 3%;
+    letter-spacing: 0.03;
     color: var(--title-tex-color);
     margin-bottom: 50px;
   }

@@ -77,6 +77,7 @@
 // кнопка футер
 .footer__button {
   padding: 10px 28px;
+  margin-bottom: 60px;
   font-weight: bold;
   @include type(
     var(--secondary-font-size),
@@ -89,6 +90,9 @@
   border: none;
   cursor: pointer;
   transition: background-color var(--animation) var(--cubic);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer__button:hover,
 .footer__button:focus {

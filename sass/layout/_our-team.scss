@@ -8,8 +8,14 @@
     margin-bottom: 50px;
     text-align: center;
     font-weight: var(--font-weight-title);
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.16;
+    @media screen and (min-width: 768px) {
+      font-size: 33px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 
   &__list {
@@ -44,5 +50,8 @@
     padding: 30px 30px;
     text-align: center;
     background-color: white;
+  }
+  &__photo {
+    width: 100%;
   }
 }

@@ -365,6 +365,8 @@ body {
 
 .social {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social__item {
   margin-right: 10px;
@@ -841,13 +843,23 @@ body {
   margin-bottom: 50px;
   text-align: center;
   font-weight: var(--font-weight-title);
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.16;
+}
+@media screen and (min-width: 768px) {
+  .our-team__title {
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-size: 36px;
+  }
 }
 .our-team__list {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(1, 450px);
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -882,6 +894,9 @@ body {
   padding: 30px 30px;
   text-align: center;
   background-color: white;
+}
+.our-team__photo {
+  width: 100%;
 }
 
 .logo-company {

@@ -113,12 +113,23 @@ body {
   padding-bottom: 94px;
 }
 .portfolio__list {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-bottom: 50px;
+  }
 }
 .portfolio__item {
   margin-right: 8px;
+  margin-bottom: 10px;
 }
 .portfolio__item:last-child {
   margin-right: 0px;

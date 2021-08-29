@@ -33,13 +33,22 @@
   padding-bottom: 94px;
 
   &__list {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    // align-items: flex-start;
+    justify-content: flex-start;
+    // margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__item {
     margin-right: 8px;
+    margin-bottom: 10px;
   }
 
   &__item:last-child {

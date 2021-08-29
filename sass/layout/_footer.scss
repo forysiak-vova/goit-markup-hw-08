@@ -247,6 +247,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      margin-right: 250px;
+    }
   }
   .subscription__form {
     // display: flex;

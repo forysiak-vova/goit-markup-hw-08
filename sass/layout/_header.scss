@@ -62,7 +62,10 @@
     height: 4px;
     border-radius: 10px;
     background-color: var(--accent-color);
-    bottom: -32px;
+    bottom: -37px;
+    @media screen and (min-width: 1200px) {
+      bottom: -31px;
+    }
   }
 
   &__item {

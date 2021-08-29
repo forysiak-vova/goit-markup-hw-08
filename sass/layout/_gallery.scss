@@ -68,9 +68,15 @@
     color: #ffffff;
     background-color: rgba(32, 148, 243, 0.9);
     height: 100%;
-    padding: 63px 24px;
+    padding: 77px 24px;
     transform: translateY(100%);
     transition: transform var(--animation) var(--cubic);
+    @media screen and (min-width: 768px) {
+      padding: 55px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
 }
 .dallery__photo {

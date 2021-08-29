@@ -116,15 +116,17 @@ body {
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__list {
     justify-content: center;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__list {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 .portfolio__item {
@@ -511,7 +513,12 @@ body {
   height: 4px;
   border-radius: 10px;
   background-color: var(--accent-color);
-  bottom: -32px;
+  bottom: -37px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__link-activ::after {
+    bottom: -31px;
+  }
 }
 .nav__item {
   margin-right: 50px;
@@ -1052,9 +1059,19 @@ body {
   color: #ffffff;
   background-color: rgba(32, 148, 243, 0.9);
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   transform: translateY(100%);
   transition: transform var(--animation) var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .gallery__action {
+    padding: 55px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__action {
+    padding: 63px 24px;
+  }
 }
 
 .dallery__photo {
@@ -1233,6 +1250,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container .subscription__title {
+    margin-right: 250px;
+  }
 }
 .footer__container .subscription__form {
   display: flex;

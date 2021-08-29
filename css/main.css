@@ -694,6 +694,7 @@ body {
 
 .mobile-menu__social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__icon {

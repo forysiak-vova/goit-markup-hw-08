@@ -22,12 +22,15 @@
     margin-bottom: 4px;
   }
   &__input_textarea {
-    height: 120px;
+    height: 95px;
     padding: 10px;
     resize: none;
     outline: none;
     border-radius: 3px;
     transition: border-color var(--animation) var(--cubic);
+    @media screen and (min-width: 1200px) {
+      height: 120px;
+    }
   }
   &__input_textarea:focus {
     border-color: var(--accent-color);

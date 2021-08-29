@@ -355,8 +355,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--white-text-color);
   padding: 15px;
   transition: transform var(--animation) var(--cubic);

@@ -782,7 +782,12 @@ body {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 .features__title {
   font-weight: var(--font-weight-title);
@@ -799,9 +804,6 @@ body {
 }
 .features__list {
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(1, 100%);
-  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -938,8 +940,14 @@ body {
 }
 
 .logo-company {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .logo-company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .logo-company__item {
   display: flex;

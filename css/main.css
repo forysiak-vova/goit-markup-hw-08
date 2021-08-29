@@ -888,11 +888,6 @@ body {
   font-size: 28px;
   line-height: 1.16;
 }
-@media screen and (min-width: 768px) {
-  .our-team__title {
-    font-size: 33px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .our-team__title {
     font-size: 36px;
@@ -977,6 +972,11 @@ body {
   letter-spacing: 0.03;
   color: var(--title-tex-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .logo-company__title {
+    font-size: 36px;
+  }
 }
 .logo-company__list {
   display: grid;

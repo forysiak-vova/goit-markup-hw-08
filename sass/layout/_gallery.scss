@@ -1,5 +1,13 @@
 .gallery {
-  @include placinggrid(3, 370px);
+  // @include placinggrid(3, 370px);
+  @include placinggrid(1, 100%);
+
+  @media screen and (min-width: 768px) {
+    @include placinggrid(2, 354px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include placinggrid(3, 370px);
+  }
 
   &__title {
     font-weight: var(--font-weight-title);
@@ -64,4 +72,7 @@
     transform: translateY(100%);
     transition: transform var(--animation) var(--cubic);
   }
+}
+.dallery__photo {
+  width: 100%;
 }

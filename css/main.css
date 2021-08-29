@@ -351,13 +351,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 590px;
+  width: 450px;
+  height: 609px;
   background-color: var(--white-text-color);
   padding: 15px;
   transition: transform var(--animation) var(--cubic);
   padding: 40px;
   border-radius: 5px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 528px;
+    height: 590px;
+  }
 }
 
 .button__sending {

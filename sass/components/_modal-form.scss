@@ -22,12 +22,15 @@
     margin-bottom: 4px;
   }
   &__input_textarea {
-    height: 95px;
+    height: 75px;
     padding: 10px;
     resize: none;
     outline: none;
     border-radius: 3px;
     transition: border-color var(--animation) var(--cubic);
+    @media screen and (min-width: 480px) {
+      height: 95px;
+    }
     @media screen and (min-width: 1200px) {
       height: 120px;
     }
@@ -65,10 +68,10 @@
   &__span:focus-within .form__input {
     border-color: var(--accent-color);
   }
-  &__consent {
-    display: flex;
-    align-items: center;
-  }
+  // &__consent {
+  //   display: flex;
+  //   align-items: center;
+  // }
 }
 
 .modal_svg__icon {
@@ -83,6 +86,7 @@
   appearance: none;
 }
 .checkbox__span {
+  display: inline-block;
   border: 2px solid #000;
   border-radius: 4px;
   width: 16px;

@@ -156,7 +156,6 @@
   background-color: #fff;
   overflow: auto;
   z-index: 200;
-
   &.is-open {
     display: block;
   }
@@ -181,10 +180,11 @@
   position: absolute;
   padding: 50px 15px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.mobile-menu__nav {
-  margin-bottom: 302px;
-}
+
 .mobile-menu__item {
   margin-bottom: 32px;
   font-weight: 500;
